@@ -1,0 +1,105 @@
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<div class="western" lang="en-US">
+<div class="western" lang="en-US">
+<span style="font-size: small;"><span style="background-color: white; background-position: initial initial; background-repeat: initial initial;"><b>Program
+to swap the values of two numbers by value, by pointers and by alias.
+</b></span></span>
+</div>
+<div class="western" lang="en-US">
+<br />
+</div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">#include&lt;conio.h&gt;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">#include&lt;iostream.h&gt;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">void swap(int a,int b)</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">{ &nbsp;&nbsp;int y=a;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;a=b;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;b=y;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;cout&lt;&lt;"The
+values after swaping by value are "&lt;&lt;a&lt;&lt;" &amp;
+"&lt;&lt;b;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">}</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">void swap(int *j,int *k)</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">{ &nbsp;&nbsp;int y;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;y=*j;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;*j=*k;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;*k=y;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;cout&lt;&lt;"The
+values after swaping by address are "&lt;&lt;*j&lt;&lt;" &amp;
+"&lt;&lt;*k;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">}</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">void swap2(int &amp;
+j,int &amp; k)</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">{ &nbsp;&nbsp;int z=j;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;j=k;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;k=z;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;cout&lt;&lt;"The
+values after swaping by alias are " &lt;&lt;j&lt;&lt;" &amp;
+"&lt;&lt;k;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">}</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">void main()</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">{ &nbsp;&nbsp;clrscr();</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;int x,y,a,b,c,d;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;cout&lt;&lt;"\nEnter
+the values of x and y to swap by value ";</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;cin&gt;&gt;x&gt;&gt;y;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;swap(x,y);</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;cout&lt;&lt;"\nOriginal
+values after swaping x and y by value is "&lt;&lt;x&lt;&lt;"
+&amp; "&lt;&lt;y;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;cout&lt;&lt;"\nEnter
+the values of a and b to swap by address ";</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;cin&gt;&gt;a&gt;&gt;b;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;swap(&amp;a,&amp;b);</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;cout&lt;&lt;"\nOriginal
+values after swaping a and b by address is "&lt;&lt;a&lt;&lt;"
+&amp; "&lt;&lt;b;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;cout&lt;&lt;"\nEnter
+the values of c and d to swap by alias ";</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;cin&gt;&gt;c&gt;&gt;d;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;swap2(c,d);</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;cout&lt;&lt;"\nOriginal
+values after swaping c and d by alias is "&lt;&lt;c&lt;&lt;"
+&amp; "&lt;&lt;d;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;getch();</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">}</span></div>
+</div>
+</div>
+

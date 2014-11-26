@@ -1,0 +1,367 @@
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<div class="western" lang="en-US">
+<div class="western" lang="en-US">
+<div class="western" lang="en-US">
+<div class="western" lang="en-US">
+<span style="font-size: small;"><b>Program to add,
+subtract, multiply and transpose a given matrix matrix.</b></span></div>
+<div class="western" lang="en-US">
+<br />
+</div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">#include&lt;iostream.h&gt;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">#include&lt;conio.h&gt;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">int
+a[20][20],b[20][20],r1,r2,c1,c2,c[20][20];</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">void multi();</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">void trans();</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">void add();</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">void sub();</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">void main()</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">{ &nbsp;&nbsp;int o,c;</div></span>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;clrscr();</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;cout&lt;&lt;"Welcome
+to opeations on matrix program";</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;do</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;{ &nbsp; cout&lt;&lt;"\nSelect
+an
+operation\n1.Transpose\n2.Multiplication\n3.Addition\n4.Substraction\n";</div></span>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cin&gt;&gt;o;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; switch(o)</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; { &nbsp; &nbsp;case 1: trans();</div></span>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; break;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; case 2:&nbsp;multi();</div></span>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; break;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;"><br /></span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; case 3:&nbsp;add();</div></span>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; break;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;"><br /></span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; case 4:&nbsp;sub();</div></span>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; break;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;"><br /></span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; default:&nbsp;cout&lt;&lt;"Invalid
+option";</div></span>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;break;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cout&lt;&lt;"\nDo
+you want to repeat the operations?\n1.Yes\t2.No";</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cin&gt;&gt;c;</span></div>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">&nbsp; &nbsp; &nbsp;}&nbsp;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;while(c==1);</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;getch();</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">}</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">void trans()</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">{ &nbsp;&nbsp;int i,j,t[20][20];</div></span>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">&nbsp; &nbsp; &nbsp;cout&lt;&lt;"Enter
+the number of rows of the matrix ";</span></div>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">&nbsp; &nbsp; &nbsp;cin&gt;&gt;r1;</span></div>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">&nbsp; &nbsp; &nbsp;cout&lt;&lt;"Enter
+the number of column of the matrix ";</span></div>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">&nbsp; &nbsp; &nbsp;cin&gt;&gt;c1;</span></div>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">&nbsp; &nbsp; &nbsp;cout&lt;&lt;"Enter
+the elements of the matrix\n";</span></div>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">&nbsp; &nbsp; &nbsp;for(i=0;i&lt;r1;i++)</span></div>
+<div class="western" lang="en-US">
+  <span style="font-size: small;">&nbsp; &nbsp; &nbsp;{ &nbsp;&nbsp;for(j=0;j&lt;c1;j++)</div></span>
+<div class="western" lang="en-US">
+   <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cin&gt;&gt;a[i][j];</span></div>
+<div class="western" lang="en-US">
+  <span style="font-size: small;">&nbsp; &nbsp; &nbsp;}</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;for(i=0;i&lt;r1;i++)&nbsp;</span></div>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">&nbsp; &nbsp; &nbsp;{ &nbsp;&nbsp;for(j=0;j&lt;c1;j++)</div></span>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; t[j][i]=a[i][j];</span></div>
+<div class="western" lang="en-US">
+  <span style="font-size: small;">&nbsp; &nbsp; &nbsp;}</span></div>
+<div class="western" lang="en-US">
+  <span style="font-size: small;">&nbsp; &nbsp; &nbsp;for(i=0;i&lt;c1;i++)</span></div>
+<div class="western" lang="en-US">
+  <span style="font-size: small;">&nbsp; &nbsp; &nbsp;{ &nbsp;&nbsp;cout&lt;&lt;"\n";</div></span>
+<div class="western" lang="en-US">
+  <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for(j=0;j&lt;r1;j++)</span></div>
+<div class="western" lang="en-US">
+  <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cout&lt;&lt;t[i][j]&lt;&lt;"\t";</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;}</span></div>
+<div class="western" lang="en-US">
+   <span style="font-size: small;">}</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">void multi()</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">{ &nbsp; int p[20][20]={0},i,j,k;</span></div>
+<div class="western" lang="en-US">
+  <span style="font-size: small;">&nbsp; &nbsp; &nbsp;cout&lt;&lt;"Enter
+the number of rows of the 1st matrix ";</span></div>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">&nbsp; &nbsp; &nbsp;cin&gt;&gt;r1;</span></div>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">&nbsp; &nbsp; &nbsp;cout&lt;&lt;"Enter
+the number of column of the 1st matrix ";</span></div>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">&nbsp; &nbsp; &nbsp;cin&gt;&gt;c1;</span></div>
+<div class="western" lang="en-US">
+  <span style="font-size: small;">&nbsp; &nbsp; &nbsp;cout&lt;&lt;"Enter
+the number of rows of the 2nd  matrix ";</span></div>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">&nbsp; &nbsp; &nbsp;cin&gt;&gt;r2;</span></div>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">&nbsp; &nbsp; &nbsp;cout&lt;&lt;"Enter
+the number of column of the 2nd matrix ";</span></div>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">&nbsp; &nbsp; &nbsp;cin&gt;&gt;c2;</span></div>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">&nbsp; &nbsp; &nbsp;if(c1==r2)</span></div>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">&nbsp; &nbsp; &nbsp;{ &nbsp; &nbsp;cout&lt;&lt;"Enter
+the elemnts of 1st matrix\n";</span></div>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;for(i=0;i&lt;r1;i++)</span></div>
+<div class="western" lang="en-US">
+  <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{ &nbsp; &nbsp;for(j=0;j&lt;c1;j++)</span></div>
+<div class="western" lang="en-US">
+   <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cin&gt;&gt;a[i][j];</span></div>
+<div class="western" lang="en-US">
+   <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cout&lt;&lt;"Enter
+the elemts of 2nd matrix\n";</span></div>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;for(i=0;i&lt;r2;i++)</span></div>
+<div class="western" lang="en-US">
+  <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{ &nbsp; for(j=0;j&lt;c2;j++)</span></div>
+<div class="western" lang="en-US">
+   <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cin&gt;&gt;b[i][j];</span></div>
+<div class="western" lang="en-US">
+   <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}</span></div>
+<span style="font-size: small;">
+<div class="western" lang="en-US">
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;for(i=0;i&lt;r1;i++)</div></span>
+<div class="western" lang="en-US">
+   <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{ &nbsp; for(j=0;j&lt;c2;j++)</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; { &nbsp; &nbsp;for(k=0;k&lt;c1;k++)</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; p[i][j]=p[i][j]+a[i][k]*b[k][j];&nbsp;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}</span></div>
+<div class="western" lang="en-US">
+   <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;for(i=0;i&lt;r1;i++)</span></div>
+<div class="western" lang="en-US">
+   <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{ &nbsp; cout&lt;&lt;"\n";</span></div>
+<div class="western" lang="en-US">
+   <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for(j=0;j&lt;c2;j++)</span></div>
+<div class="western" lang="en-US">
+   <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cout&lt;&lt;p[i][j]&lt;&lt;"\t";</span></div>
+<div class="western" lang="en-US">
+   <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}</span></div>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">&nbsp; &nbsp; &nbsp;}</span></div>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">&nbsp; &nbsp; &nbsp;else</span></div>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">&nbsp; &nbsp; &nbsp;cout&lt;&lt;"Multiplication
+not possible";</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">}</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">void add()</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">{ &nbsp; int i,j;</span></div>
+<div class="western" lang="en-US">
+  <span style="font-size: small;">&nbsp; &nbsp; &nbsp;cout&lt;&lt;"Enter
+the number of rows of the 1st matrix ";</span></div>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">&nbsp; &nbsp; &nbsp;cin&gt;&gt;r1;</span></div>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">&nbsp; &nbsp; &nbsp;cout&lt;&lt;"Enter
+the number of column of the 1st matrix ";</span></div>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">&nbsp; &nbsp; &nbsp;cin&gt;&gt;c1;</span></div>
+<div class="western" lang="en-US">
+  <span style="font-size: small;">&nbsp; &nbsp; &nbsp;cout&lt;&lt;"Enter
+the number of rows of the 2nd  matrix ";</span></div>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">&nbsp; &nbsp; &nbsp;cin&gt;&gt;r2;</span></div>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">&nbsp; &nbsp; &nbsp;cout&lt;&lt;"Enter
+the number of column of the 2nd matrix ";</span></div>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">&nbsp; &nbsp; &nbsp;cin&gt;&gt;c2;</span></div>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">&nbsp; &nbsp; &nbsp;if(c1==c2&amp;&amp;r1==r2)</span></div>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">&nbsp; &nbsp; &nbsp;{ &nbsp; </span>cout&lt;&lt;"Enter
+the elements of the 1st matrix";</div>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for(i=0;i&lt;r1;i++)</span></div>
+<div class="western" lang="en-US">
+  <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; { &nbsp;&nbsp;</span>for(j=0;j&lt;c1;j++)</div>
+<div class="western" lang="en-US">
+   <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cin&gt;&gt;a[i][j];</span></div>
+<div class="western" lang="en-US">
+  <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</span></div>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cout&lt;&lt;"Enter
+the elements of the 2nd matrix";</span></div>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for(i=0;i&lt;r2;i++)</span></div>
+<div class="western" lang="en-US">
+  <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; { &nbsp; &nbsp;for(j=0;j&lt;c2;j++)</span></div>
+<div class="western" lang="en-US">
+   <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cin&gt;&gt;b[i][j];</span></div>
+<div class="western" lang="en-US">
+  <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</span></div>
+<div class="western" lang="en-US">
+  <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for(i=0;i&lt;r1;i++)</span></div>
+<div class="western" lang="en-US">
+  <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; { &nbsp; &nbsp;for(j=0;j&lt;c1;j++)</span></div>
+<div class="western" lang="en-US">
+  <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; c[i][j]=a[i][j]+b[i][j];</span></div>
+<div class="western" lang="en-US">
+  <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</span></div>
+<div class="western" lang="en-US">
+  <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for(i=0;i&lt;r1;i++)</span></div>
+<div class="western" lang="en-US">
+   <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; { &nbsp; &nbsp;cout&lt;&lt;"\n";</span></div>
+<div class="western" lang="en-US">
+   <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for(j=0;j&lt;c2;j++)</span></div>
+<div class="western" lang="en-US">
+   <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cout&lt;&lt;c[i][j]&lt;&lt;"\t";</span></div>
+<div class="western" lang="en-US">
+   <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</span></div>
+<div class="western" lang="en-US">
+  <span style="font-size: small;">&nbsp; &nbsp; &nbsp;}</span></div>
+<div class="western" lang="en-US">
+  <span style="font-size: small;">&nbsp; &nbsp; &nbsp;else</span></div>
+<div class="western" lang="en-US">
+  <span style="font-size: small;">&nbsp; &nbsp; &nbsp;cout&lt;&lt;"Addition
+not possible";</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">}</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">void sub()</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">{ &nbsp; int i,j;</span></div>
+<div class="western" lang="en-US">
+  <span style="font-size: small;">&nbsp; &nbsp; &nbsp;cout&lt;&lt;"Enter
+the number of rows of the 1st matrix ";</span></div>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">&nbsp; &nbsp; &nbsp;cin&gt;&gt;r1;</span></div>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">&nbsp; &nbsp; &nbsp;cout&lt;&lt;"Enter
+the number of column of the 1st matrix ";</span></div>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">&nbsp; &nbsp; &nbsp;cin&gt;&gt;c1;</span></div>
+<div class="western" lang="en-US">
+  <span style="font-size: small;">&nbsp; &nbsp; &nbsp;cout&lt;&lt;"Enter
+the number of rows of the 2nd  matrix ";</span></div>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">&nbsp; &nbsp; &nbsp;cin&gt;&gt;r2;</span></div>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">&nbsp; &nbsp; &nbsp;cout&lt;&lt;"Enter
+the number of column of the 2nd matrix ";</span></div>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">&nbsp; &nbsp; &nbsp;cin&gt;&gt;c2;</span></div>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">&nbsp; &nbsp; &nbsp;if(c1==c2&amp;&amp;r1==r2)</span></div>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">&nbsp; &nbsp; &nbsp;{ &nbsp; &nbsp;cout&lt;&lt;"Enter
+the elements of the 1st matrix";</div></span>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;for(i=0;i&lt;r1;i++)</span></div>
+<div class="western" lang="en-US">
+  <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{ &nbsp;&nbsp;for(j=0;j&lt;c1;j++)</span></div>
+<div class="western" lang="en-US">
+   <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cin&gt;&gt;a[i][j];</span></div>
+<div class="western" lang="en-US">
+  <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}</span></div>
+<div class="western" lang="en-US">
+  <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cout&lt;&lt;"Enter
+the elements of the 2nd matrix";</span></div>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;for(i=0;i&lt;r2;i++)</span></div>
+<div class="western" lang="en-US">
+  <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{ &nbsp; for(j=0;j&lt;c2;j++)</span></div>
+<div class="western" lang="en-US">
+   <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cin&gt;&gt;b[i][j];</span></div>
+<div class="western" lang="en-US">
+  <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}</span></div>
+<div class="western" lang="en-US">
+  <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;for(i=0;i&lt;r1;i++)</span></div>
+<div class="western" lang="en-US">
+  <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{ &nbsp;&nbsp;for(j=0;j&lt;c1;j++)</span></div>
+<div class="western" lang="en-US">
+  <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; c[i][j]=a[i][j]-b[i][j];</span></div>
+<div class="western" lang="en-US">
+  <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}</span></div>
+<div class="western" lang="en-US">
+  <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;for(i=0;i&lt;r1;i++)</span></div>
+<div class="western" lang="en-US">
+   <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{ &nbsp; cout&lt;&lt;"\n";</span></div>
+<div class="western" lang="en-US">
+   <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for(j=0;j&lt;c2;j++)</span></div>
+<div class="western" lang="en-US">
+   <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cout&lt;&lt;c[i][j]&lt;&lt;"\t";</span></div>
+<div class="western" lang="en-US">
+   <span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}</span></div>
+<div class="western" lang="en-US">
+  <span style="font-size: small;">&nbsp; &nbsp; &nbsp; }</span></div>
+<div class="western" lang="en-US">
+  <span style="font-size: small;">&nbsp; &nbsp; &nbsp; else</span></div>
+<div class="western" lang="en-US">
+  <span style="font-size: small;">&nbsp; &nbsp; &nbsp; cout&lt;&lt;"Substraction
+not possible"</span></div>
+<div class="western" lang="en-US">
+}</div>
+</div>
+</div>
+</div>
+</div>

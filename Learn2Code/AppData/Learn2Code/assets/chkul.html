@@ -1,0 +1,21 @@
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<b>Program to accept a single input character and check if it is an uppercase, lowercase, digit or a special character.</b><br />
+<br />
+#include&lt;stdio.h&gt;<br />
+#include&lt;conio.h&gt;<br />
+void main()<br />
+{&nbsp; char ch;<br />
+&nbsp;&nbsp; clrscr();<br />
+&nbsp;&nbsp; printf("Enter the character:");<br />
+&nbsp;&nbsp; scanf("%c",&amp;ch);<br />
+&nbsp;&nbsp; if(ch&gt;=48&amp;&amp;ch&lt;=57)<br />
+&nbsp;&nbsp; {&nbsp; printf("Entered character is a Number");<br />
+&nbsp;&nbsp; }<br />
+&nbsp;&nbsp; else if((ch&gt;=65&amp;&amp;ch&lt;=90)||(ch&gt;=97&amp;&amp;ch&lt;=121))<br />
+&nbsp;&nbsp; {&nbsp; printf("Entered character is an Alphabet");<br />
+&nbsp;&nbsp; }<br />
+&nbsp;&nbsp; else<br />
+&nbsp;&nbsp; {&nbsp; printf("Entered character is a Special Symbol");<br />
+&nbsp;&nbsp; }<br />
+&nbsp;&nbsp; getch();<br />
+}</div>

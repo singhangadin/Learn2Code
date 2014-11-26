@@ -1,0 +1,23 @@
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<b>Program to change the case of a character without using the standard functions.<br /></b>
+<br />
+#include&lt;stdio.h&gt;<br />
+#include&lt;conio.h&gt;<br />
+void main()<br />
+{&nbsp; char ch;<br />
+&nbsp;&nbsp; clrscr();<br />
+&nbsp;&nbsp; printf("Enter the character:");<br />
+&nbsp;&nbsp; scanf("%c",&amp;ch);<br />
+&nbsp;&nbsp; if(isupper(ch))<br />
+&nbsp;&nbsp; {&nbsp; ch+=32;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf("%c is its transformation",ch);<br />
+&nbsp;&nbsp; }<br />
+&nbsp;&nbsp; else if(islower(ch))<br />
+&nbsp;&nbsp; {&nbsp; ch-=32;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf("%c is its transformation",ch);<br />
+&nbsp;&nbsp; }<br />
+&nbsp;&nbsp; else<br />
+&nbsp;&nbsp; {&nbsp; printf("Entered character is not a Alphabet");<br />
+&nbsp;&nbsp; }<br />
+&nbsp;&nbsp; getch();<br />
+}</div>

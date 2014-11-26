@@ -1,0 +1,99 @@
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<div class="western" lang="en-US">
+<div class="western" lang="en-US">
+<div class="western" lang="en-US">
+<div class="western" lang="en-US">
+<div class="western" lang="en-US">
+<span style="font-size: small;"><b>Program to create a
+class time to show and take time in hours and minutes. Also create
+member functions to add two times and show the result.</b></span></div>
+<div class="western" lang="en-US">
+<br />
+</div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">#include&lt;conio.h&gt;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">#include&lt;iostream.h&gt;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">class time</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">{ &nbsp;&nbsp;int min,hr;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;public:</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;void gettime()</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; { &nbsp; &nbsp;cout&lt;&lt;"Enter
+the hour ";</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cin&gt;&gt;hr;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cout&lt;&lt;"Enter
+the min ";</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cin&gt;&gt;min;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; }</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; void sumtime(time
+t1,time t2)</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; { &nbsp;&nbsp;int a,b;</div></span>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;a=t1.hr+t2.hr;&nbsp;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;b=t1.min+t2.min;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if(b&gt;60)</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{ &nbsp;&nbsp;hr=a+b/60;</div></span>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; min=b-(b/60)*60;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if(hr&gt;=24)</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;hr=hr%24;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; }</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; void showtime()</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; { &nbsp;&nbsp;cout&lt;&lt;"\nThe
+time is "&lt;&lt;hr&lt;&lt;": "&lt;&lt;min;</div></span>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; }</div></span>
+<span style="font-size: small;">
+<div class="western" lang="en-US">
+};</div></span>
+<div class="western" lang="en-US">
+<span style="font-size: small;">void main()</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">{ &nbsp;&nbsp;time t1,t2,t3;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;clrscr();</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;t1.gettime();</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;t2.gettime();</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;t1.showtime();</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;t2.showtime();</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;t3.sumtime(t1,t2);</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;t3.showtime();</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;getch();</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">}</span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+

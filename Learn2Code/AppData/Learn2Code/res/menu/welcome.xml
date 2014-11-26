@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:Learn2Code="http://schemas.android.com/apk/res-auto" >
+    <item 
+        android:id="@+id/over" 
+        android:icon="@drawable/ic_action_overflow" 
+        android:title="@string/action_more" 
+        Learn2Code:showAsAction="always" 
+        android:showAsAction="always">
+        <menu>
+            <item 
+                android:icon="@drawable/ic_action_about"
+                android:id="@+id/creds" 
+                android:title="@string/title_activity_credits"
+                Learn2Code:showAsAction="always" 
+        		android:showAsAction="always"/>
+            
+            <item 
+                android:icon="@drawable/ic_action_error"
+                android:id="@+id/feed" 
+                android:title="@string/title_activity_feedback"
+                Learn2Code:showAsAction="always" 
+        		android:showAsAction="always"/>
+        </menu>
+    </item>
+    
+
+</menu>

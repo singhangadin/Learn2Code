@@ -1,0 +1,31 @@
+        <RelativeLayout 
+             xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/RL"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:background="#000000"
+             android:orientation="vertical" >
+
+
+             <TextView
+                 android:id="@+id/textView1"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_above="@+id/textView1"
+                 android:layout_centerHorizontal="true"
+                 android:text="@string/view_textview"
+                 android:textAppearance="?android:attr/textAppearanceMedium" 
+                 android:textColor="#FFFFFF"/>
+
+             <Button
+                 android:id="@+id/conbtn"
+                 android:layout_width="match_parent"
+                 android:layout_height="40dp"
+                 android:layout_alignParentBottom="true"
+                 android:layout_alignParentLeft="true"
+                 android:background="#272727"
+                 android:drawable="@drawable/buttons"
+                 android:text="@string/action_continue"
+                 android:textColor="#FFFFFF" />
+
+         </RelativeLayout>

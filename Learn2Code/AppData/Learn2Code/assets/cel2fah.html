@@ -1,0 +1,34 @@
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<b>Program to convert Farenheit temperature to Centigrate or Centigrate to Fahrenheit.</b><br />
+<br />
+#include&lt;stdio.h&gt;<br />
+#include&lt;conio.h&gt;<br />
+void main()<br />
+{&nbsp; char ch;<br />
+&nbsp;&nbsp; float fh,cl;<br />
+&nbsp;&nbsp; Start:<br />
+&nbsp;&nbsp; clrscr();<br />
+&nbsp;&nbsp; printf("1.Convert Fahrenheit to Centigrate");<br />
+&nbsp;&nbsp; printf("\n2.Convert Centigrate to Fahrenheit");<br />
+&nbsp;&nbsp; printf("\nChoose an option:");<br />
+&nbsp;&nbsp; ch=getchar();<br />
+&nbsp;&nbsp; switch(ch)<br />
+&nbsp;&nbsp; {&nbsp; case '1':clrscr();<br />
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf("Enter the Fahrenheit value:");<br />
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; scanf("%f",&amp;fh);<br />
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cl=(fh-32)/1.8;<br />
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf("Corresponding Celsius value is:%f",cl);<br />
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; break;<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; case '2':clrscr();<br />
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf("Enter the Celsius value:");<br />
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; scanf("%f",&amp;cl);<br />
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fh=(1.8*cl)+32;<br />
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf("Corresponding Fahrenheit value is:%f",fh);<br />
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; break;<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; default :printf("Please enter a valid option");<br />
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; goto Start;<br />
+&nbsp;&nbsp; }<br />
+&nbsp;&nbsp; getch();<br />
+}</div>

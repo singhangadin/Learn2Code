@@ -1,0 +1,117 @@
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<div class="western" lang="en-US">
+<div class="western" lang="en-US">
+<div class="western" lang="en-US">
+<span style="font-size: small;"><b>Program to create a
+class student with data members name, roll no., course and marks and
+member functions to take input and display them.</b></span></div>
+<div class="western" lang="en-US">
+<br />
+</div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">#include&lt;iostream.h&gt;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">#include&lt;conio.h&gt;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">#include&lt;stdio.h&gt;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">class student</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">{ &nbsp;&nbsp;private:</div></span>
+<div class="western" lang="en-US">
+   <span style="font-size: small;">&nbsp; &nbsp; &nbsp;char name[20];</span></div>
+<div class="western" lang="en-US">
+   <span style="font-size: small;">&nbsp; &nbsp; &nbsp;int marks[5];</span></div>
+<div class="western" lang="en-US">
+   <span style="font-size: small;">&nbsp; &nbsp; &nbsp;long int rollno;</span></div>
+<div class="western" lang="en-US">
+   <span style="font-size: small;">&nbsp; &nbsp; &nbsp;char course[10];</span></div>
+<div class="western" lang="en-US">
+   <span style="font-size: small;">&nbsp; &nbsp; &nbsp;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;public:</span></div>
+<div class="western" lang="en-US">
+  <span style="font-size: small;">&nbsp; &nbsp; &nbsp;void getdata(void);</span></div>
+<div class="western" lang="en-US">
+  <span style="font-size: small;">&nbsp; &nbsp; &nbsp;void putdata(void);</span></div>
+<div class="western" lang="en-US">
+  <span style="font-size: small;">&nbsp; &nbsp; &nbsp;void showdata(void);</span></div>
+<div class="western" lang="en-US">
+  <span style="font-size: small;">};</span></div>
+<div class="western" lang="en-US">
+  <span style="font-size: small;">void
+student::getdata(void)</span></div>
+<div class="western" lang="en-US">
+  <span style="font-size: small;">{ &nbsp;&nbsp;int i;</div></span>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;cout&lt;&lt;"Enter
+the marks in 5 subjects ";</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;for(i=0;i&lt;5;i++)</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;cin&gt;&gt;marks[i];</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;cout&lt;&lt;"\nEnter
+the name ";</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;gets(name);</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;cout&lt;&lt;"\nEnter
+the roll numbers ";</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;cin&gt;&gt;rollno;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;cout&lt;&lt;"\nEnter
+the stream ";</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;gets(course);</span></div>
+<div class="western" lang="en-US">
+  <span style="font-size: small;">}</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">void student::putdata()</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">{ &nbsp; int j;</div></span>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;cout&lt;&lt;"\nThe
+marks in 5 subjects are ";</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;for(j=0;j&lt;5;j++)</span></div>
+<div class="western" lang="en-US">
+   <span style="font-size: small;">&nbsp; &nbsp; &nbsp;cout&lt;&lt;marks[j]&lt;&lt;"
+";</span></div>
+<div class="western" lang="en-US">
+   <span style="font-size: small;">&nbsp; &nbsp; &nbsp;cout&lt;&lt;"\nName
+";</span></div>
+<div class="western" lang="en-US">
+   <span style="font-size: small;">&nbsp; &nbsp; &nbsp;cout&lt;&lt;name;</span></div>
+<div class="western" lang="en-US">
+   <span style="font-size: small;">&nbsp; &nbsp; &nbsp;cout&lt;&lt;"\nRoll
+no. ";</span></div>
+<div class="western" lang="en-US">
+   <span style="font-size: small;">&nbsp; &nbsp; &nbsp;cout&lt;&lt;rollno;</span></div>
+<div class="western" lang="en-US">
+   <span style="font-size: small;">&nbsp; &nbsp; &nbsp;cout&lt;&lt;"\nCourse
+";</span></div>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">&nbsp; &nbsp; &nbsp;puts(course);</span></div>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">}</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">void main()</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">{ &nbsp;&nbsp;clrscr();</div></span>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">&nbsp; &nbsp; &nbsp;student s1;</span></div>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">&nbsp; &nbsp; &nbsp;s1.getdata();</span></div>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">&nbsp; &nbsp; &nbsp;s1.putdata();</span></div>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">&nbsp; &nbsp; &nbsp;getch();</span></div>
+<br />
+<div class="western" lang="en-US">
+<span style="font-size: small;">}</span></div>
+</div>
+</div>
+</div>
+

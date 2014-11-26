@@ -1,0 +1,74 @@
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<div class="western" lang="en-US">
+<div class="western" lang="en-US">
+<span style="font-size: small;"><b>Program to find a
+sub-string in a string and delete it.</b></span></div>
+<div class="western" lang="en-US">
+<br />
+</div>
+<span style="font-size: small;">
+<div class="western" lang="en-US">
+#include&lt;iostream.h&gt;</div>
+<div class="western" lang="en-US">
+#include&lt;conio.h&gt;</div>
+<div class="western" lang="en-US">
+#include&lt;stdio.h&gt;</div></span>
+<div class="western" lang="en-US">
+<span style="font-size: small;">void main( )</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">{ &nbsp;&nbsp;int i, pos, len;</div></span>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;char  s1[20], s2[10],
+*c;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;clrscr( );</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;pos=len=0;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;cout&lt;&lt;"\n
+Enter a string : ";</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;gets(s1);</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;cout&lt;&lt;"\n
+Enter a string : ";</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;gets(s2);</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;c=strstr(s1,s2);</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;if(c!=0)</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;{ &nbsp;&nbsp;cout&lt;&lt;"\n The
+second string is a substring of First string.";</div></span>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; pos=c -(&amp;s1[0]);</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; len=strlen(s2);</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for( i=pos; i&lt;(pos+len);
+i++)</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; s1[i]='_';</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cout&lt;&lt;"\n
+After deletion, the string now becomes....\n";</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; puts(s1);</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp; }</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp; else</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp; { &nbsp; cout&lt;&lt;"\n The
+second string is Not a substring of First string.";</div></span>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp; }</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp; getch( );</span></div>
+<br />
+<div class="western" lang="en-US">
+<span style="font-size: small;">}</span></div>
+</div>
+</div>
+

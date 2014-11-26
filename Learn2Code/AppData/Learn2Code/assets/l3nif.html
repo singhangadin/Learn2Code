@@ -1,0 +1,28 @@
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<b>Program to find the largest of the three numbers using nested if.</b><br />
+<br />
+#include&lt;stdio.h&gt;<br />
+#include&lt;conio.h&gt;<br />
+void main()<br />
+{&nbsp; int a,b,c;<br />
+&nbsp;&nbsp; clrscr();<br />
+&nbsp;&nbsp; printf("Enter the three nos(A,B,C):");<br />
+&nbsp;&nbsp; scanf("%d%d%d",&amp;a,&amp;b,&amp;c);<br />
+&nbsp;&nbsp; if(a&gt;b)<br />
+&nbsp;&nbsp; {&nbsp; if(a&gt;c)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {&nbsp; printf("%d is greatest among all",a);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {&nbsp; printf("%d is greatest among all",c);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br />
+&nbsp;&nbsp; }<br />
+&nbsp;&nbsp; else<br />
+&nbsp;&nbsp; {&nbsp; if(b&gt;c)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {&nbsp; printf("%d is greatest among all",b);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {&nbsp; printf("%d is greatest among all",c);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br />
+&nbsp;&nbsp; }<br />
+&nbsp;&nbsp; getch();<br />
+}</div>

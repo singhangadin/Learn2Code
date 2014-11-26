@@ -1,0 +1,17 @@
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<b>Program to accept a three digit number &amp; reverse the number without using loop.<br />
+<br /></b>
+#include&lt;stdio.h&gt;<br />
+#include&lt;conio.h&gt;<br />
+void main()<br />
+{&nbsp; int no,o,t,h,nw;<br />
+&nbsp;&nbsp; clrscr();<br />
+&nbsp;&nbsp; printf("Enter a 3 digit no:");<br />
+&nbsp;&nbsp; scanf("%d",&amp;no);<br />
+&nbsp;&nbsp; h=no/100;<br />
+&nbsp;&nbsp; t=(no-(h*100))/10;<br />
+&nbsp;&nbsp; o=no%10;<br />
+&nbsp;&nbsp; nw=(100*o)+(10*t)+h;<br />
+&nbsp;&nbsp; printf("Reverse of the no is:%d",nw);<br />
+&nbsp;&nbsp; getch();<br />
+}</div>

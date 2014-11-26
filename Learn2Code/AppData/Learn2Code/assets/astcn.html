@@ -1,0 +1,91 @@
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<div class="western" lang="en-US">
+<div class="western" lang="en-US">
+<div class="western" lang="en-US">
+<div class="western" lang="en-US">
+<span style="font-size: medium;"><b>Program
+to create a class complex with member function to add and subtract
+two complex numbers.</b></span></div>
+<div class="western" lang="en-US">
+<br />
+</div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">#include&lt;conio.h&gt;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">#include&lt;iostream.h&gt;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">class complex</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">{ &nbsp;&nbsp;int r,i;</div></span>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;public:</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;void
+getdata(){cout&lt;&lt;"Enter the vaue of real and imaginary part
+";cin&gt;&gt;r&gt;&gt;i;}</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;void
+putdata(){cout&lt;&lt;"the  complex number is "&lt;&lt;r&lt;&lt;"
++ "&lt;&lt;i&lt;&lt;"i";}</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;complex sum(complex c)</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;{ &nbsp;&nbsp;&nbsp;complex t;</div></span>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;t.r=r+c.r;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;t.i=i+c.i;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return(t);</span></div>
+<div class="western" lang="en-US">
+ <span style="font-size: small;">&nbsp; &nbsp; &nbsp;}</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;complex sub(complex c)</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;{ &nbsp; &nbsp;complex t;</div></span>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;t.r=r-c.r;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;t.i=i-c.i;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return(t);</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;}</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">};</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">void main()</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">{ &nbsp;&nbsp;clrscr();</div></span>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;complex c1,c2,c3,c4;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;c1.getdata();</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;c2.getdata();</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;c3=c1.sum(c2);</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;cout&lt;&lt;"After
+addition ";</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;c3.putdata();</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;c4=c1.sub(c2);</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;cout&lt;&lt;"\nAfter
+substraction ";</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;c4.putdata();</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp; &nbsp; &nbsp;getch();</span></div>
+<br />
+<div class="western" lang="en-US">
+<span style="font-size: small;">}</span></div>
+</div>
+</div>
+</div>
+</div>
+

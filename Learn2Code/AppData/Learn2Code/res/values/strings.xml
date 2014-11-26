@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Learn2Code</string>
+    <string name="action_more">More</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_c">C Programming</string>
+    <string name="action_cpp">C++ Programming</string> 
+    <string name="action_java">Java Programming</string>
+    <string name="title_activity_langs">Languages</string>
+    <string name="title_activity_credits">About Us</string>
+    <string name="title_activity_feedback">Feedback</string>
+    <string name="title_activity_cpp">Learn C++</string>
+    <string name="title_activity_c">Learn C</string>
+    <string name="title_activity_java">Learn Java</string>
+    <string name="view_textview">NOTE: This app provides codes of selected languages to help students and upcoming developers to enhance their knowledge. </string>
+    <string name="action_search">Search</string>
+    <string name="action_continue">CONTINUE</string>
+    <string name="adt_link">www.androidtechies.com</string>
+	<string name="title">Android Techies</string>
+    <string name="dev_inf">Developed By:</string>
+    <string name="dev_one">Angad Singh</string>
+    <string name="dev_tb">Harshdeep Singh</string>
+	<string name="dev_thb">Prashant</string>
+	<string name="dev_f">Yajur Sapra</string>
+	<string name="dev_cs">(CSE-1st Year)</string> 
+	<string name="dev_it">(IT-1st Year)</string> 
+
+</resources>

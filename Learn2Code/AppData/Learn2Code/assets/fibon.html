@@ -1,0 +1,63 @@
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<style type="text/css">P { margin-bottom: 0cm; direction: ltr; color: rgb(0, 0, 0); widows: 2; orphans: 2; }P.western { font-family: "Times New Roman",serif; font-size: 16pt; }P.cjk { font-family: "Times New Roman",serif; font-size: 16pt; }P.ctl { font-family: "Times New Roman",serif; font-size: 12pt; }</style>
+
+
+
+<div class="western" lang="en-US">
+<b><span style="font-size: small;">Program to print the
+fibonacii series till given number of terms using recursive function.</span></b></div><br />
+<div class="western" lang="en-US">
+<span style="font-size: small;">#include&lt;iostream.h&gt;</span>
+</div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">#include&lt;conio.h&gt;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">int fibonacci(int);</span>
+</div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">void main()</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">{</span><span style="font-size: small;">&nbsp;&nbsp; int N,i;</span>
+</div>
+<div class="western" lang="en-US">
+&nbsp;&nbsp;&nbsp; <span style="font-size: small;">clrscr();</span></div>
+<div class="western" lang="en-US">
+&nbsp;&nbsp;&nbsp; <span style="font-size: small;">cout&lt;&lt;"\nEnter
+the no. of terms of Fibonacci series to be printed : ";</span></div>
+<div class="western" lang="en-US">
+&nbsp;&nbsp;&nbsp;   <span style="font-size: small;">cin&gt;&gt;N;</span></div>
+<div class="western" lang="en-US">
+&nbsp;&nbsp;&nbsp;  <span style="font-size: small;">cout&lt;&lt;
+"\n\nFirst "&lt;&lt;N&lt;&lt;" terms of Fibonacci
+series are :\n";</span></div>
+<div class="western" lang="en-US">
+&nbsp;&nbsp;&nbsp;   <span style="font-size: small;">for(i=1;i&lt;=N;i++)</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp;&nbsp; &nbsp;	 cout&lt;&lt;fibonacci(i)&lt;&lt;"
+";</span></div>
+<div class="western" lang="en-US">
+&nbsp;&nbsp;&nbsp;   <span style="font-size: small;">getch();</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">}</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">int fibonacci(int x)</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">{</span><span style="font-size: small;">&nbsp;&nbsp; int f;</span>
+</div>
+<div class="western" lang="en-US">
+&nbsp;&nbsp;&nbsp; <span style="font-size: small;">if(x==1||x==2)</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;	 return 1;</span></div>
+<div class="western" lang="en-US">
+&nbsp;&nbsp;&nbsp;   <span style="font-size: small;">else </span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp;&nbsp;&nbsp; {</span><span style="font-size: small;">&nbsp;&nbsp; f=fibonacci(x-1)+fibonacci(x-2);</span>
+</div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	  return f;</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">&nbsp;&nbsp;&nbsp;	}</span></div>
+<div class="western" lang="en-US">
+<span style="font-size: small;">} </span></div>
+</div>
+

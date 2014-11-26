@@ -1,0 +1,17 @@
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<b>Program to accept a three digit number &amp; find the sum of the digits of the number without using loop.<br />
+<br /></b>
+#include&lt;stdio.h&gt;<br />
+#include&lt;conio.h&gt;<br />
+void main()<br />
+{&nbsp; int n,h,t,o,sum;<br />
+&nbsp;&nbsp; clrscr();<br />
+&nbsp;&nbsp; printf("Enter a 3 digit no.:");<br />
+&nbsp;&nbsp; scanf("%d",&amp;n);<br />
+&nbsp;&nbsp; h=n/100;<br />
+&nbsp;&nbsp; t=(n-(h*100))/10;<br />
+&nbsp;&nbsp; o=n%10;<br />
+&nbsp;&nbsp; sum=h+t+o;<br />
+&nbsp;&nbsp; printf("Sum of all the digits is:%d",sum);<br />
+&nbsp;&nbsp; getch();<br />
+}</div>
